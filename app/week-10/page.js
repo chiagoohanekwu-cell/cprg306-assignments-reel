@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useUserAuth } from "../contexts/AuthContext";
 
-export default function Week9Page() {
+export default function Week10Page() {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
 
   const handleLogin = async () => {
@@ -24,7 +24,7 @@ export default function Week9Page() {
 
   return (
     <main style={{ padding: "20px" }}>
-      <h1>Week 9</h1>
+      <h1>Week 10</h1>
 
       {!user ? (
         <>
@@ -41,7 +41,7 @@ export default function Week9Page() {
 
           <br /><br />
 
-          <Link href="/week-9/shopping-list">
+          <Link href="/week-10/shopping-list">
             Go to Shopping List
           </Link>
         </>
